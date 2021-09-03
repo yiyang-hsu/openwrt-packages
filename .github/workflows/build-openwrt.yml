@@ -63,6 +63,7 @@ jobs:
       run: |
         [ -e $FEEDS_CONF ] && mv $FEEDS_CONF openwrt/feeds.conf.default
         cd openwrt
+        echo 'src-git kcptun https://github.com/kuoruan/openwrt-kcptun' >>feeds.conf.default
         echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
     - name: Update feeds
