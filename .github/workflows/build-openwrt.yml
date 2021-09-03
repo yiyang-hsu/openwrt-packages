@@ -21,7 +21,7 @@ on:
 
 env:
   REPO_URL: https://github.com/friendlyarm/friendlywrt
-  REPO_BRANCH: master
+  REPO_BRANCH: master-v19.07.5
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   UPLOAD_BIN_DIR: true
