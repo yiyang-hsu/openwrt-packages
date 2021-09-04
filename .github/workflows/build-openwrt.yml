@@ -96,11 +96,6 @@ jobs:
           wget -qO- https://github.com/vernesong/OpenClash/releases/download/TUN/clash-linux-armv8.tar.gz | tar xOvz > etc/openclash/core/clash_game
           chmod +x etc/openclash/core/clash*
 
-    - name: Update Target.mk
-      run: |
-        cd openwrt
-        sed -i 's/dnsmasq /dnsmasq-full default-settings luci /' target.mk
-
     - name: Update feeds
       run: |
         cd openwrt
